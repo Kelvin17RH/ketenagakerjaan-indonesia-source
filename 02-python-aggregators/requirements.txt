@@ -1,0 +1,7 @@
+# Pinned to the versions used during development. Newer 2.x pandas / 2.x numpy
+# should also work; bump as needed.
+pandas>=2.0,<3.0
+numpy>=1.24,<3.0
+
+# Only required by 03-dashboard/make_og_image.py (optional)
+Pillow>=10.0

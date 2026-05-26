@@ -1,0 +1,15 @@
+# Netlify HTTP headers
+# Aggressive caching for data/ files since they change rarely.
+# Browser caches the cube for up to 1 year; on update, build script
+# can append ?v=N to fetch URLs to bust cache.
+
+/data/*
+  Cache-Control: public, max-age=31536000
+  Access-Control-Allow-Origin: *
+
+# index.html should always re-validate (cheap shell)
+/index.html
+  Cache-Control: public, max-age=300, must-revalidate
+
+/
+  Cache-Control: public, max-age=300, must-revalidate

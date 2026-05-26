@@ -1,0 +1,84 @@
+# =============================================================================
+# Sakernas microdata + heavy intermediates — NEVER commit
+# =============================================================================
+# Raw + clean Sakernas (individual respondents). Anything microdata-shaped:
+*.dta
+*.dta.tmp
+*.pkl
+*.pickle
+*.npz
+*.parquet
+*.feather
+
+# Per-year clean files + master pool tables
+clean/
+finaloutput/
+newvars/
+newvars_pool_*
+master_pool*
+clean_sakernas_*
+
+# =============================================================================
+# Pre-aggregated cube JSON (rebuildable from microdata via aggregators)
+# =============================================================================
+# Cubes can run to ~40 MB each — too big for GitHub and trivially regenerable.
+agg_*.json
+newvars_cube.json
+newvars2_cube.json
+medians.json
+medians_all.json
+medians_pair.json
+wage_all.json
+prod_wage_gap.json
+inequality.json
+labor_space.json
+labor_space_*.json
+extended_data.json
+data/*.json
+
+# Resumable aggregator state pickles
+*_state.pkl
+*_partial.pkl
+*_state.pickle
+
+# =============================================================================
+# Built dashboard artefact (rebuildable via build_split.py)
+# =============================================================================
+index.html
+Indonesia_Labour_Dashboard.html
+og-image.png
+data/
+
+# =============================================================================
+# Secrets — never commit
+# =============================================================================
+.env
+.env.*
+*.pem
+*.key
+*token*
+secrets/
+**/credentials.json
+
+# =============================================================================
+# OS / IDE / scratchpad noise
+# =============================================================================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Stata logs
+*.log
+*.smcl
+
+# Local notes / sketch files
+NOTES_LOCAL.md
+TODO_LOCAL.md
+scratch/
