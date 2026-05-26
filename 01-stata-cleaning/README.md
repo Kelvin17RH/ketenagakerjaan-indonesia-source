@@ -79,3 +79,10 @@ Sakernas raw directory and your preferred output location.
   years lack the BPJS / contract / severance underlying variables.
 
 See [`docs/METHODOLOGY.md`](../docs/METHODOLOGY.md) for the full rationale on each treatment.
+
+## Reference: original questionnaires
+
+Sakernas blank questionnaires (1997-2024, public PDFs from BPS) are archived at
+[`reference/kuesioner-sakernas/`](../reference/kuesioner-sakernas/). Use them
+to verify the exact wording of any survey question and to trace variables
+across the cross-year harmonisation in this cleaning step.

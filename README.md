@@ -52,10 +52,13 @@ workflow-source/
 │   ├── _headers                   ← Netlify cache policy
 │   └── update_netlify_split.sh    ← deploy to the Netlify-watched GitHub repo
 │
-└── docs/
-    ├── METHODOLOGY.md             ← statistical methodology + sample handling
-    ├── DATA_SOURCES.md            ← Sakernas details + how to request microdata
-    └── DEPLOYMENT.md              ← how to deploy to Netlify
+├── docs/
+│   ├── METHODOLOGY.md             ← statistical methodology + sample handling
+│   ├── DATA_SOURCES.md            ← Sakernas details + how to request microdata
+│   └── DEPLOYMENT.md              ← how to deploy to Netlify
+│
+└── reference/
+    └── kuesioner-sakernas/        ← Sakernas questionnaires 1997-2024 (PDF, public)
 ```
 
 ---
@@ -175,7 +178,7 @@ backlog. New contributors should read it before making changes.
 
 If you use this dashboard or pipeline in research, policy, or media work, please cite:
 
-> Sekretariat Staf Ahli SPK Bappenas (2026). *Sekilas Ketenagakerjaan Indonesia: an
+> Hidayat, Kelvin Ramadhan (2026). *Sekilas Ketenagakerjaan Indonesia: an
 > interactive dashboard of Indonesia's labour market, 2002–2024*.
 > <https://ketenagakerjaan-indonesia.netlify.app>
 
@@ -185,5 +188,4 @@ Source data: BPS, Survei Angkatan Kerja Nasional (Sakernas) 2001–2024.
 
 ## Contact
 
-Issues, feature requests, data corrections — open a GitHub Issue or DM
-[@kelvinr.hidayat](mailto:sekretariatsahli.spk@bappenas.go.id).
+Issues, feature requests, data corrections — open a GitHub Issue on the source repo.
